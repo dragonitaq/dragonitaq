@@ -30,13 +30,13 @@ class Index extends React.Component {
         </section>
         {/* Section About */}
         <section className='about'>
-          <div className='about-container'>
-            <h2 className='about__title'>Little about me</h2>
+          <h2 className='about__title'>Little about me</h2>
+          <div className='about__container'>
             <p className='about__description--1'>
               I'm a junior full-stack web developer from South East Asia who brings his electric guitar 🎸 & rocks 🤘 on stage during his time in university; but not anymore in his adulthood.
             </p>
             <p className='about__description--2'>
-              It's not that sad because I found another passion which is to programmatically build something! My first programming experience is with Visual Basic for Excel.
+              It's not that sad because I found another passion which is to programmatically build something! My first programming experience was with Visual Basic for Excel.
             </p>
             <p className='about__description--3'>Little fact: I was from corporate training & consultancy business before being as web dev.</p>
           </div>
@@ -47,93 +47,88 @@ class Index extends React.Component {
           <div className='projects'>
             <div className='project'>
               <a href='https://charadesgo.netlify.app/' target='_blank' className='project__title'>
-                Charades Go
+                <span>&#128279;</span> Charades Go
               </a>
               <a href='https://charadesgo.netlify.app/' target='_blank'>
                 <img className='project__screenshot' src={charadesgo} alt='screenshot of charadesgo website' />
               </a>
-              <p className='project__description'>
-                A web game for traditional party word guessing game called charades. This is built using MERN stack technologies.<br></br>
-                You can select your language and set play duration. It also has sound effect for gameplay.
-              </p>
+              <p>A web game for traditional party word guessing game called charades. This is built using MERN stack technologies.</p>
+              <p>You can select your language and set the play duration. It also has sound effect for gameplay.</p>
             </div>
             <div className='project'>
               <a href='https://mjgift.herokuapp.com/' target='_blank' className='project__title'>
-                MJ Gift
+                <span>&#128279;</span> MJ Gift
               </a>
               <a href='https://mjgift.herokuapp.com/' target='_blank'>
                 <img className='project__screenshot' src={mjgift} alt='screenshot of charadesgo website' />
               </a>
-              <p className='project__description'>
-                MJ Gift is a Facebook gift shop which focuses on practicability and aesthetic in mind.<br></br>
-                A standard website with carousel pictures & videos gallery.<br></br>
-                It also comes with contact form for enquiry.
-              </p>
+              <p>MJ Gift is a Facebook gift shop which focuses on practicability and aesthetic in mind.</p>
+              <p>A standard website with carousel pictures & videos gallery. It also comes with contact form for enquiry.</p>
             </div>
             <div className='project'>
               <a href='https://wisdomage.netlify.app/' target='_blank' className='project__title'>
-                Wisdom Age
+                <span>&#128279;</span> Wisdom Age
               </a>
               <a href='https://wisdomage.netlify.app/' target='_blank'>
                 <img className='project__screenshot' src={wisdomage} alt='screenshot of charadesgo website' />
               </a>
-              <p className='project__description'>
-                Wisdom Age is a training provider who provides corporate training & consultant services as well as simulation workshop design.<br></br>
-                This is built using simple HTML & CSS for landing page purpose.
-              </p>
+              <p>Wisdom Age is a training provider who provides corporate training & consultant services as well as simulation workshop design.</p>
+              <p>This is built using plain HTML & CSS for simple landing page purpose.</p>
             </div>
           </div>
         </section>
         {/* Section Skills */}
         <section className='skills'>
           <h2 className='skills__title'>Technologies</h2>
-          <p className='skills__description'>Technologies I'm familiar with:</p>
-          <ul>
-            <li>
-              <img className='tech-icon' src={htmlIcon} alt='html icon' />
-              <p className='tech-label'>HTML</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={ejsIcon} alt='ejs icon' />
-              <p className='tech-label'>EJS</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={pugIcon} alt='pug icon' />
-              <p className='tech-label'>Pug</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={cssIcon} alt='css icon' />
-              <p className='tech-label'>CSS</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={sassIcon} alt='sass icon' />
-              <p className='tech-label'>SASS</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={jsIcon} alt='javascript icon' />
-              <p className='tech-label'>JavaScript</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={reactIcon} alt='react icon' />
-              <p className='tech-label'>React</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={nodeIcon} alt='node.js icon' />
-              <p className='tech-label'>Node.js</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={expressIcon} alt='express icon' />
-              <p className='tech-label'>Express</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={mongooseIcon} alt='mongoose icon' />
-              <p className='tech-label'>Mongoose</p>
-            </li>
-            <li>
-              <img className='tech-icon' src={socketioIcon} alt='socketio icon' />
-              <p className='tech-label'>Socket IO</p>
-            </li>
-          </ul>
+          <div className='skills__container'>
+            <p className='skills__description'>Technologies I'm familiar with:</p>
+            <ul>
+              <li>
+                <img className='tech-icon' src={htmlIcon} alt='html icon' />
+                <p className='tech-label'>HTML</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={ejsIcon} alt='ejs icon' />
+                <p className='tech-label'>EJS</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={pugIcon} alt='pug icon' />
+                <p className='tech-label'>Pug</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={cssIcon} alt='css icon' />
+                <p className='tech-label'>CSS</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={sassIcon} alt='sass icon' />
+                <p className='tech-label'>SASS</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={jsIcon} alt='javascript icon' />
+                <p className='tech-label'>JavaScript</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={reactIcon} alt='react icon' />
+                <p className='tech-label'>React</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={nodeIcon} alt='node.js icon' />
+                <p className='tech-label'>Node.js</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={expressIcon} alt='express icon' />
+                <p className='tech-label'>Express</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={mongooseIcon} alt='mongoose icon' />
+                <p className='tech-label'>Mongoose</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={socketioIcon} alt='socketio icon' />
+                <p className='tech-label'>Socket IO</p>
+              </li>
+            </ul>
+          </div>
           <div className='layman-term'>
             <h3 className='layman-term__title'>Layman’s Terms</h3>
             <p className='layman-term__text'>These technologies allow me to build the content you see on the web.</p>
@@ -148,7 +143,9 @@ class Index extends React.Component {
             <input type='text' id='name' name='name' placeholder='Name' />
             <input type='email' id='email' name='email' placeholder='Email' />
             <textarea id='msg' name='msg' rows='10' cols='50' placeholder='Message'></textarea>
-            <input type='submit' className='submit' />
+            <button type='submit' className='submit'>
+              Send
+            </button>
           </form>
           <div className='visit-github'>
             <p className='visit-github__text'>Visit me at</p>
