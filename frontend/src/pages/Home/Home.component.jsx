@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from '@reach/router';
 
-import './Home.style.scss';
+import NavBtn from '../../components/nav-btn/navBtn.component.jsx';
+import NavOverlay from '../../components/nav-overlay/navOverlay.component.jsx';
 
 import htmlIcon from '../../assets/html.png';
 import ejsIcon from '../../assets/ejs.png';
@@ -19,17 +20,43 @@ import charadesgo from '../../assets/charadesgo-screenshot.png';
 import mjgift from '../../assets/mjgift-screenshot.png';
 import wisdomage from '../../assets/wisdomage-screenshot.png';
 
+import './Home.style.scss';
+
 class Index extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showNavOverlay: false,
+    };
+    // this.handleNavBtnClick = this.handleNavBtnClick.bind(this);
+  }
+
+  handleNavBtnClick = () => {
+    this.setState({
+      showNavOverlay: !this.state.showNavOverlay,
+    });
+  };
+
   render() {
     return (
       <div className='main'>
+        {this.state.showNavOverlay ? <NavOverlay handleNavBtnClick={this.handleNavBtnClick} /> : null}
+        {!this.state.showNavOverlay ? (
+          <button
+            onClick={() => {
+              this.handleNavBtnClick();
+            }}
+          >
+            <NavBtn />
+          </button>
+        ) : null}
         {/* Section Hero */}
         <section className='hero'>
           <h1 className='hero__name'>I'm Kevin</h1>
           <p className='hero__role'>a junior full-stack web developer</p>
         </section>
         {/* Section About */}
-        <section className='about'>
+        <section className='about' id='about'>
           <h2 className='about__title'>Little about me</h2>
           <div className='about__container'>
             <p className='about__description--1'>
@@ -42,7 +69,7 @@ class Index extends React.Component {
           </div>
         </section>
         {/* Section Portfolio */}
-        <section className='portfolio'>
+        <section className='portfolio' id='portfolio'>
           <h2 className='portfolio__title'>Portfolio</h2>
           <div className='projects'>
             <div className='project'>
@@ -78,7 +105,7 @@ class Index extends React.Component {
           </div>
         </section>
         {/* Section Skills */}
-        <section className='skills'>
+        <section className='skills' id='skills'>
           <h2 className='skills__title'>Technologies</h2>
           <div className='skills__container'>
             <p className='skills__description'>Technologies I'm familiar with:</p>
@@ -137,7 +164,7 @@ class Index extends React.Component {
           </div>
         </section>
         {/* Section Contact */}
-        <section className='contact'>
+        <section className='contact' id='contact'>
           <h1 className='contact__title'>Contact Me</h1>
           <form action='/enquiry-form' method='POST' id='contact-form__form' className='contact-form'>
             <input type='text' id='name' name='name' placeholder='Name' />

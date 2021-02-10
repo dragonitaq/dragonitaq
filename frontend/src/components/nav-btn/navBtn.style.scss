@@ -1,0 +1,22 @@
+.nav-btn {
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 1;
+  cursor: pointer;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 15px;
+
+  @media (max-width: 550px) {
+    width: 4rem;
+    height: 4rem;
+    top: 3rem;
+    right: 3rem;
+  }
+}
