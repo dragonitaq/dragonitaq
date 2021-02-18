@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ffde1c4.chunk.css",
+    "main.js": "/static/js/main.8a0515a0.chunk.js",
+    "main.js.map": "/static/js/main.8a0515a0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9d99a528.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9d99a528.js.map",
+    "static/js/2.4f140a17.chunk.js": "/static/js/2.4f140a17.chunk.js",
+    "static/js/2.4f140a17.chunk.js.map": "/static/js/2.4f140a17.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9ffde1c4.chunk.css.map": "/static/css/main.9ffde1c4.chunk.css.map",
+    "static/js/2.4f140a17.chunk.js.LICENSE.txt": "/static/js/2.4f140a17.chunk.js.LICENSE.txt",
+    "static/media/airplane1.1ecdd4d4.svg": "/static/media/airplane1.1ecdd4d4.svg",
+    "static/media/airplane2.627339f5.svg": "/static/media/airplane2.627339f5.svg",
+    "static/media/birds.275ac29e.svg": "/static/media/birds.275ac29e.svg",
+    "static/media/charadesgo-screenshot.e83b55a9.png": "/static/media/charadesgo-screenshot.e83b55a9.png",
+    "static/media/cloud1.32120002.svg": "/static/media/cloud1.32120002.svg",
+    "static/media/cloud2.ef69def8.svg": "/static/media/cloud2.ef69def8.svg",
+    "static/media/cloud3.03b17b39.svg": "/static/media/cloud3.03b17b39.svg",
+    "static/media/kite.4b15e8a6.svg": "/static/media/kite.4b15e8a6.svg",
+    "static/media/mjgift-screenshot.812185a4.png": "/static/media/mjgift-screenshot.812185a4.png",
+    "static/media/mountain.e025c1cf.svg": "/static/media/mountain.e025c1cf.svg",
+    "static/media/rainbow.2980cb49.svg": "/static/media/rainbow.2980cb49.svg",
+    "static/media/rocket.032a7cbc.svg": "/static/media/rocket.032a7cbc.svg",
+    "static/media/wisdomage-screenshot.7ea50718.png": "/static/media/wisdomage-screenshot.7ea50718.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d99a528.js",
+    "static/js/2.4f140a17.chunk.js",
+    "static/css/main.9ffde1c4.chunk.css",
+    "static/js/main.8a0515a0.chunk.js"
+  ]
+}
