@@ -1,11 +1,13 @@
+/* eslint-disable jsx-a11y/accessible-emoji */
 /* eslint-disable react/jsx-no-target-blank */
+
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import { withController } from 'react-scroll-parallax';
 import { CSSTransition } from 'react-transition-group';
 
-import NavBtn from '../../components/nav-btn/navBtn.component';
-import NavOverlay from '../../components/nav-overlay/navOverlay.component';
+import NavBtn from '../../components/nav-btn/navBtn.component.jsx';
+import NavOverlay from '../../components/nav-overlay/navOverlay.component.jsx';
 
 import htmlIcon from '../../assets/html.png';
 import ejsIcon from '../../assets/ejs.png';
@@ -60,8 +62,8 @@ class Home extends React.Component {
   render() {
     return (
       <div className='main'>
-        {/* Something is weird behaving with this transition. */}
-        <CSSTransition in={this.state.showNavOverlay} timeout={250} classNames='nav-overlay-animate'>
+        {/* Something is weird behaving with this transition. I made it work but looks against the doc. The "in" props doesn't behave like the doc said. The component will enter animation regardless. */}
+        <CSSTransition in={this.state.showNavOverlay} timeout={300} classNames='nav-overlay-animate'>
           {this.state.showNavOverlay ? <NavOverlay handleNavBtnClick={this.handleNavBtnClick} /> : <div></div>}
         </CSSTransition>
         {!this.state.showNavOverlay ? <NavBtn handleNavBtnClick={this.handleNavBtnClick} /> : <div></div>}
@@ -219,10 +221,9 @@ class Home extends React.Component {
           </Parallax>
           <h1 className='contact__title'>Contact Me</h1>
           <form className='contact-form' name='contact' method='POST' netlify-honeypot='bot-field' data-netlify='true'>
-            <input type='hidden' name='form-name' value='contact' />
-            <input type='text' id='name' name='name' placeholder='Name' required />
-            <input type='email' id='email' name='email' placeholder='Email' required />
-            <textarea id='msg' name='msg' rows='10' cols='50' placeholder='Message' required></textarea>
+            <input type='text' id='name' name='name' placeholder='Name' />
+            <input type='email' id='email' name='email' placeholder='Email' />
+            <textarea id='msg' name='msg' rows='10' cols='50' placeholder='Message'></textarea>
             <button type='submit' className='submit'>
               Send
             </button>

@@ -10,3 +10,5 @@ It's not that sad because I found another passion which is to programmatically b
 - 📚 I’m currently learning React-Static & Strapi.
 - 🤔 I’m looking for help for combining CSS Modules with SASS while using React.
 - ⚡ Little fact: I was from corporate training & consulting business before being as web dev.
+
+Visit me at [https://dragonitaq.netlify.app/](https://dragonitaq.netlify.app/)

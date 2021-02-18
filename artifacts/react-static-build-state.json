@@ -1,0 +1,63 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      {
+        "location": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\src\\pages"
+      }
+    ],
+    "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "react-static-plugin-sass",
+    "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq"
+  ],
+  "paths": {
+    "ROOT": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq",
+    "SRC": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\src",
+    "DIST": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\dist",
+    "ASSETS": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\dist",
+    "PLUGINS": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\plugins",
+    "TEMP": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\tmp",
+    "ARTIFACTS": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\artifacts",
+    "PUBLIC": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\public",
+    "NODE_MODULES": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\node_modules",
+    "PACKAGE": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\Kevin\\Documents\\Code\\dragonitaq\\dist\\staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
