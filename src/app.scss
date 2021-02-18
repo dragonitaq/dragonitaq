@@ -1,0 +1,41 @@
+:root {
+  --color-main: #424874;
+  --color-primary: #a6b1e1;
+  --color-secondary: #dcd6f7;
+  --color-tertiary: #f4eeff;
+
+  --color-bg-1: #5893d1;
+  --color-bg-2: #00aae2;
+  --color-bg-3: #87ceeb;
+  --color-bg-4: #dee5fd;
+  --color-bg-5: #cfaf7b;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media (max-width: 800px) {
+    font-size: 60%;
+  }
+  @media (max-width: 600px) {
+    font-size: 57.5%;
+  }
+  @media (max-width: 400px) {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-family: 'Petrona', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}

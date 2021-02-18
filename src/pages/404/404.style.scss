@@ -1,0 +1,14 @@
+.no-such-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 50%;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}

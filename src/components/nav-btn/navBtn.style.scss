@@ -1,0 +1,29 @@
+.nav-btn {
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: 2;
+  cursor: pointer;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(136, 136, 136, 0.3);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border-radius: 15px;
+  transition: all 0.2s;
+
+  @media (max-width: 550px) {
+    width: 4rem;
+    height: 4rem;
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.25);
+}
