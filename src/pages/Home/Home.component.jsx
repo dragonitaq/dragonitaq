@@ -221,9 +221,11 @@ class Home extends React.Component {
           </Parallax>
           <h1 className='contact__title'>Contact Me</h1>
           <form className='contact-form' name='contact' method='POST' netlify-honeypot='bot-field' data-netlify='true'>
-            <input type='text' id='name' name='name' placeholder='Name' />
-            <input type='email' id='email' name='email' placeholder='Email' />
-            <textarea id='msg' name='msg' rows='10' cols='50' placeholder='Message'></textarea>
+            {/* I found out line below still needed for Netlify to detect form submission. */}
+            <input type='hidden' name='form-name' value='contact' />
+            <input type='text' id='name' name='name' placeholder='Name' required />
+            <input type='email' id='email' name='email' placeholder='Email' required />
+            <textarea id='msg' name='msg' rows='10' cols='50' placeholder='Message' required></textarea>
             <button type='submit' className='submit'>
               Send
             </button>
