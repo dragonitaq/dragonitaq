@@ -1,9 +1,11 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import { withController } from 'react-scroll-parallax';
+import { CSSTransition } from 'react-transition-group';
 
-import NavBtn from '../../components/nav-btn/navBtn.component.jsx';
-import NavOverlay from '../../components/nav-overlay/navOverlay.component.jsx';
+import NavBtn from '../../components/nav-btn/navBtn.component';
+import NavOverlay from '../../components/nav-overlay/navOverlay.component';
 
 import htmlIcon from '../../assets/html.png';
 import ejsIcon from '../../assets/ejs.png';
@@ -58,8 +60,11 @@ class Home extends React.Component {
   render() {
     return (
       <div className='main'>
-        {this.state.showNavOverlay ? <NavOverlay handleNavBtnClick={this.handleNavBtnClick} /> : null}
-        {!this.state.showNavOverlay ? <NavBtn handleNavBtnClick={this.handleNavBtnClick} /> : null}
+        {/* Something is weird behaving with this transition. */}
+        <CSSTransition in={this.state.showNavOverlay} timeout={250} classNames='nav-overlay-animate'>
+          {this.state.showNavOverlay ? <NavOverlay handleNavBtnClick={this.handleNavBtnClick} /> : <div></div>}
+        </CSSTransition>
+        {!this.state.showNavOverlay ? <NavBtn handleNavBtnClick={this.handleNavBtnClick} /> : <div></div>}
         {/* Section Hero */}
         <section className='hero'>
           <Parallax className='parallax__cloud1' y={[-150, 150]} x={[-50, 50]}>
@@ -214,9 +219,10 @@ class Home extends React.Component {
           </Parallax>
           <h1 className='contact__title'>Contact Me</h1>
           <form className='contact-form' name='contact' method='POST' netlify-honeypot='bot-field' data-netlify='true'>
-            <input type='text' id='name' name='name' placeholder='Name' />
-            <input type='email' id='email' name='email' placeholder='Email' />
-            <textarea id='msg' name='msg' rows='10' cols='50' placeholder='Message'></textarea>
+            <input type='hidden' name='form-name' value='contact' />
+            <input type='text' id='name' name='name' placeholder='Name' required />
+            <input type='email' id='email' name='email' placeholder='Email' required />
+            <textarea id='msg' name='msg' rows='10' cols='50' placeholder='Message' required></textarea>
             <button type='submit' className='submit'>
               Send
             </button>
