@@ -78,7 +78,7 @@
     // color: var(--color-main);
     color: rgb(200, 200, 200);
     font-size: 8rem;
-    z-index: 1;
+    z-index: 2;
 
     @media (max-width: 550px) {
       font-size: 6rem;
@@ -88,7 +88,7 @@
   .hero__role {
     font-size: 2rem;
     margin-top: 2.5rem;
-    z-index: 1;
+    z-index: 2;
 
     @media (max-width: 550px) {
       font-size: 2rem;
@@ -136,6 +136,7 @@
     width: auto;
     padding: 2.5rem;
     @include glass;
+    z-index: 2;
 
     p {
       margin-bottom: 2.5rem;
@@ -208,6 +209,7 @@
       flex-direction: column;
       padding: 2.5rem;
       @include glass;
+      z-index: 2;
 
       &__title {
         display: inline-block;
@@ -284,7 +286,7 @@
     justify-content: center;
     align-items: center;
     padding: 2.5rem;
-    z-index: 1;
+    z-index: 2;
     @include glass;
   }
 
@@ -311,10 +313,12 @@
 
   .layman-term {
     width: auto;
+    max-width: 50rem;
     margin-top: 3rem;
     padding: 2.5rem;
     z-index: 1;
     @include glass;
+    z-index: 2;
 
     &__title {
       text-align: center;
@@ -390,6 +394,7 @@
     width: auto;
     padding: 2.5rem;
     @include glass;
+    z-index: 2;
 
     input {
       width: 100%;

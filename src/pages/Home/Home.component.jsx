@@ -114,8 +114,8 @@ class Home extends React.Component {
               <a href='https://charadesgo.netlify.app/' target='_blank'>
                 <img className='project__screenshot' src={charadesgo} alt='screenshot of charadesgo website' />
               </a>
-              <p>A web game for traditional party word guessing game called charades. This is built using MERN stack technologies.</p>
-              <p>You can select your language and set the play duration. It also has sound effect for gameplay.</p>
+              <p>A web game for traditional party word guessing game called charades. It's great for family occasion.</p>
+              <p>You can select your language and set the play duration. It also has sound effect for the gameplay. Powered by MERN stack technologies.</p>
             </div>
             <div className='project'>
               <a href='https://mjgift.herokuapp.com/' target='_blank' className='project__title'>
@@ -125,7 +125,7 @@ class Home extends React.Component {
                 <img className='project__screenshot' src={mjgift} alt='screenshot of charadesgo website' />
               </a>
               <p>MJ Gift is a Facebook gift shop which focuses on practicability and aesthetic in mind.</p>
-              <p>A standard website with carousel pictures & videos gallery. It also comes with contact form for enquiry.</p>
+              <p>A standard website with image carousel & video gallery as well as contact form for enquiry.</p>
             </div>
             <div className='project'>
               <a href='https://wisdomage.netlify.app/' target='_blank' className='project__title'>
@@ -134,8 +134,8 @@ class Home extends React.Component {
               <a href='https://wisdomage.netlify.app/' target='_blank'>
                 <img className='project__screenshot' src={wisdomage} alt='screenshot of charadesgo website' />
               </a>
-              <p>Wisdom Age is a training provider who provides corporate training & consultant services as well as simulation workshop design.</p>
-              <p>This is built using plain HTML & CSS for simple landing page purpose.</p>
+              <p>Wisdom Age is a training provider who provides corporate training, simulation workshop & consultant services.</p>
+              <p>This is built using plain HTML & CSS for simple landing page purpose with contact form for enquiry.</p>
             </div>
           </div>
         </section>
@@ -200,7 +200,7 @@ class Home extends React.Component {
           <div className='layman-term'>
             <h3 className='layman-term__title'>Layman’s Terms</h3>
             <p className='layman-term__text'>These technologies allow me to build the content you see on the web.</p>
-            <p>They also allow me to handle the server operations behind the screen which power the content on the web.</p>
+            <p>They also allow me to handle the server operations behind the screen which power the content dynamically on the web.</p>
             <p>Hope you get the point. 😉</p>
           </div>
         </section>

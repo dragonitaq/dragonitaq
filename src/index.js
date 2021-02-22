@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { ParallaxProvider } from 'react-scroll-parallax';
-
+import ReactGA from 'react-ga';
 // Your top level component
 import App from './App';
 
@@ -11,6 +11,9 @@ export default App;
 
 // Render your app
 if (typeof document !== 'undefined') {
+  ReactGA.initialize('G-K33LVHN387');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   const target = document.getElementById('root');
 
   const renderMethod = target.hasChildNodes() ? ReactDOM.hydrate : ReactDOM.render;
