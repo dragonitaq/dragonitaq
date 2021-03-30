@@ -16,6 +16,8 @@ import cssIcon from '../../assets/css.png';
 import sassIcon from '../../assets/sass.png';
 import jsIcon from '../../assets/js.png';
 import reactIcon from '../../assets/react.png';
+import reduxIcon from '../../assets/redux.png';
+import scIcon from '../../assets/sc.png';
 import nodeIcon from '../../assets/node.png';
 import expressIcon from '../../assets/express.png';
 import mongooseIcon from '../../assets/mongoose.png';
@@ -24,6 +26,8 @@ import githubIcon from '../../assets/github.png';
 import charadesgo from '../../assets/charadesgo-screenshot.png';
 import mjgift from '../../assets/mjgift-screenshot.png';
 import wisdomage from '../../assets/wisdomage-screenshot.png';
+
+import arrowDown from '../../assets/arrow-down.png';
 
 // Background SVG
 import cloud1 from '../../assets/background/cloud1.svg';
@@ -80,6 +84,7 @@ class Home extends React.Component {
           </Parallax>
           <h1 className='hero__name'>I'm Kevin</h1>
           <p className='hero__role'>a junior full-stack web developer</p>
+          <img className='arrow-down' src={arrowDown} alt='arrow down' />
         </section>
         {/* Section About */}
         <section className='about' id='about'>
@@ -178,6 +183,14 @@ class Home extends React.Component {
               <li>
                 <img className='tech-icon' src={reactIcon} alt='react icon' />
                 <p className='tech-label'>React</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={reduxIcon} alt='redux icon' />
+                <p className='tech-label'>Redux</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={scIcon} alt='styled components icon' />
+                <p className='tech-label'>Styled Components</p>
               </li>
               <li>
                 <img className='tech-icon' src={nodeIcon} alt='node.js icon' />
