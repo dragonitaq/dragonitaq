@@ -16,6 +16,8 @@ import cssIcon from '../../assets/css.png';
 import sassIcon from '../../assets/sass.png';
 import jsIcon from '../../assets/js.png';
 import reactIcon from '../../assets/react.png';
+import reduxIcon from '../../assets/redux.png';
+import scIcon from '../../assets/sc.png';
 import nodeIcon from '../../assets/node.png';
 import expressIcon from '../../assets/express.png';
 import mongooseIcon from '../../assets/mongoose.png';
@@ -24,6 +26,9 @@ import githubIcon from '../../assets/github.png';
 import charadesgo from '../../assets/charadesgo-screenshot.png';
 import mjgift from '../../assets/mjgift-screenshot.png';
 import wisdomage from '../../assets/wisdomage-screenshot.png';
+import cowy from '../../assets/cowy-screenshot.png';
+
+import arrowDown from '../../assets/arrow-down.png';
 
 // Background SVG
 import cloud1 from '../../assets/background/cloud1.svg';
@@ -80,6 +85,7 @@ class Home extends React.Component {
           </Parallax>
           <h1 className='hero__name'>I'm Kevin</h1>
           <p className='hero__role'>a junior full-stack web developer</p>
+          <img className='arrow-down' src={arrowDown} alt='arrow down' />
         </section>
         {/* Section About */}
         <section className='about' id='about'>
@@ -116,6 +122,12 @@ class Home extends React.Component {
               </a>
               <p>A web game for traditional party word guessing game called charades. It's great for family occasion.</p>
               <p>You can select your language and set the play duration. It also has sound effect for the gameplay. Powered by MERN stack technologies.</p>
+              <p>
+                Source Code:
+                <a className='source-code-anchor' target='_blank' href='https://github.com/dragonitaq/charades-go'>
+                  Here
+                </a>
+              </p>
             </div>
             <div className='project'>
               <a href='https://mjgift.herokuapp.com/' target='_blank' className='project__title'>
@@ -126,6 +138,12 @@ class Home extends React.Component {
               </a>
               <p>MJ Gift is a Facebook gift shop which focuses on practicability and aesthetic in mind.</p>
               <p>A standard website with image carousel & video gallery as well as contact form for enquiry.</p>
+              <p>
+                Source Code:
+                <a className='source-code-anchor' target='_blank' href='https://github.com/dragonitaq/mjgift'>
+                  Here
+                </a>
+              </p>
             </div>
             <div className='project'>
               <a href='https://wisdomage.netlify.app/' target='_blank' className='project__title'>
@@ -136,6 +154,28 @@ class Home extends React.Component {
               </a>
               <p>Wisdom Age is a training provider who provides corporate training, simulation workshop & consultant services.</p>
               <p>This is built using plain HTML & CSS for simple landing page purpose with contact form for enquiry.</p>
+              <p>
+                Source Code:
+                <a className='source-code-anchor' target='_blank' href='https://github.com/dragonitaq/wisdomage'>
+                  Here
+                </a>
+              </p>
+            </div>
+            <div className='project'>
+              <a href='https://cowy-react.netlify.app/' target='_blank' className='project__title'>
+                <span>&#128279;</span> COWY
+              </a>
+              <a href='https://cowy-react.netlify.app/' target='_blank'>
+                <img className='project__screenshot' src={cowy} alt='screenshot of cowy website' />
+              </a>
+              <p>COWY is simple blogging website that enables users to register and publish posts as well as edit their contents.</p>
+              <p>This is built using React & Strapi and the data is served by MongoDB Atlas Cloud Database.</p>
+              <p>
+                Source Code:
+                <a className='source-code-anchor' target='_blank' href='https://github.com/dragonitaq/cowy_frontend'>
+                  Here
+                </a>
+              </p>
             </div>
           </div>
         </section>
@@ -178,6 +218,14 @@ class Home extends React.Component {
               <li>
                 <img className='tech-icon' src={reactIcon} alt='react icon' />
                 <p className='tech-label'>React</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={reduxIcon} alt='redux icon' />
+                <p className='tech-label'>Redux</p>
+              </li>
+              <li>
+                <img className='tech-icon' src={scIcon} alt='styled components icon' />
+                <p className='tech-label'>Styled Components</p>
               </li>
               <li>
                 <img className='tech-icon' src={nodeIcon} alt='node.js icon' />
