@@ -84,7 +84,7 @@ class Home extends React.Component {
             <img src={kite} alt='' />
           </Parallax>
           <h1 className='hero__name'>I'm Kevin</h1>
-          <p className='hero__role'>a junior full-stack web developer</p>
+          <p className='hero__role'>a full-stack web developer</p>
           <img className='arrow-down' src={arrowDown} alt='arrow down' />
         </section>
         {/* Section About */}
